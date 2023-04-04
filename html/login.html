@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+
+</head>
+<style>
+    .login{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    }
+
+@media screen and (max-width:1000px) {
+    .login{
+        height: auto;
+    }
+}
+ 
+
+   body{
+    background-color: #f0f0f0;
+    background-image: linear-gradient(270deg,#085EEA 0%,#2AF598 100%);
+   }
+
+   .bg-light{
+    background-color: white !important;
+   }
+   
+
+</style>
+
+<body>
+
+        <div class="container">
+            <div class="login d-flex justify-content-center align-items-center">
+                <div class="row w-75">
+                    <div class="col-xl-6  text-align-center p-3 bg-success rounded-start d-flex text-light flex-column justify-content-center align-items-center">
+                        <h4>Welcome to company_name</h4>
+                        <p>Don't have an account?</p>
+                        <a href="#" class="btn btn-outline-light">Sign up</a>
+                       
+                    </div>
+                    <div class="col-xl-6 rounded-end bg-light p-5">
+                        <h2 class="text-center">Login</h2>
+                        <form class="login-form" onsubmit="login(event)">
+                            <div class="mb-2">
+                                <label for="userid" class="form-label">User Id</label>
+                             <input type="text" class="form-control rounded-pill" id="userid" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control rounded-pill" id="password" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <!-- <button class="btn btn-success">Login</button> -->
+                              <a href="home.html" class="btn btn-success w-100 rounded-pill">Login</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="saveDet">
+                                    <label class="form-check-label" for="saveDet">Remember me</label>
+                                  </div>
+                                  <div>
+                                    <a href="#" class="text-decoration-none text-dark text-muted">Forget password</a>
+                                  </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+     
+      
+ 
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
