@@ -3,19 +3,19 @@ import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import ResponsiveAppBar from './components/AppBar';
 import RecipeReviewCard from './components/Card';
 import SearchBar from './Pages/SearchBar';
-import Header from './components/Drawer';
+import login from './components/Login';
+
+
 
 
 export default function App() {
   return (
     
     <Router>
-      <Header/>
+      
       <ResponsiveAppBar/>
-      <div>
-        <SearchBar/>
-
-        </div>
+       <login/>
+   
       
       
       <Routes>
