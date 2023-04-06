@@ -1,14 +1,34 @@
-import './App.css';
-import Message from './components/Message';
-import Navbar from './components/Navbar';
+import React from 'react';
+import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
+import ResponsiveAppBar from './components/AppBar';
+import RecipeReviewCard from './components/Card';
+import SearchBar from './Pages/SearchBar';
+import Header from './components/Drawer';
 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Navbar/>
-    </div>
-  );
+    
+    <Router>
+      <Header/>
+      <ResponsiveAppBar/>
+      <div>
+        <SearchBar/>
+
+        </div>
+      
+      
+      <Routes>
+        
+        <Route path='' Component={RecipeReviewCard}/>
+
+      </Routes>
+      
+
+      </Router>
+
+    
+  )
 }
 
-export default App;
+
