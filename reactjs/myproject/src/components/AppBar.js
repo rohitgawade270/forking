@@ -23,7 +23,7 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const Home= (event) => {
+  const handleOpenNavMenu= (event) => {
     setAnchorElNav(event.currentTarget);
     
   };
@@ -68,7 +68,7 @@ function ResponsiveAppBar() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={Home}
+              onClick={handleOpenNavMenu}
               color="inherit"
             >
               <MenuIcon />
