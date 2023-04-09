@@ -12,6 +12,7 @@ function App() {
     </nav>
     <div className="container">
       <h1>Hello {name}</h1>
+      <img src="" alt="" />
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, voluptas illum! Vero nisi, voluptates quae magnam culpa reiciendis nemo reprehenderit eum distinctio, laboriosam eius recusandae illum labore beatae. Dolorum, ad?</p>
     </div>
     </>
