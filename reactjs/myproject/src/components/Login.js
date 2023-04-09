@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-export function login() {
+export default function login() {
 
 
     return(
